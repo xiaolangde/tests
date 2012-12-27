@@ -22,23 +22,32 @@ eg:
 */
 
 #include "cons.h"
-#include "malloc.h"
+#include "cl-in-c.h"
+#include "cl-malloc.h"
 
 CL_FUNC_DEF(cons)
 {
     va_list ap;
     void *ret = malloc(sizeof(struct cl_cons));
-    va_start(ap,arg0);
-    if (arg0)
-    {
-    }
 
-    va_end(ap);
+
+//    va_start(ap,arg0);
+//    if (arg0)
+//    {
+//    }
+//
+//    va_end(ap);
 }
 
 int cl-read(char*in)
 {
     
+}
+
+
+CL_FUNC_DEF(quote)
+{
+
 }
 
 /*
